@@ -1,0 +1,111 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(145deg, #000000, #1a1a1a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 2px solid #FFD700;
+    border-radius: 20px;
+    padding: 40px 35px;
+    width: 400px;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Heading */
+.login-container h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+}
+
+/* Labels and Inputs */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #FFD700;
+    font-weight: 600;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #FFD700;
+    background-color: #111;
+    color: #FFD700;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Button */
+.login-container input[type="submit"] {
+    background-color: #FFD700;
+    color: #000;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid gold;
+}
+
+/* Error and Success Messages */
+.login-container .error {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.login-container .success {
+    color: #00ff7f;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer Paragraphs and Links */
+.login-container p {
+    margin-top: 15px;
+    color: #FFD700;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.login-container p a {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
